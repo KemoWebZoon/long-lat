@@ -1,8 +1,10 @@
 const button = document.getElementById("get-location-button");
+let v = document.getElementById("value");
 
 async function getData(lat, long) {
   try {
     alert(`latitude: ${lat}, longitude: ${long}`);
+    v.innerText = `latitude: ${lat}, longitude: ${long}`;
     return {
       latitude: lat,
       longitude: long,
